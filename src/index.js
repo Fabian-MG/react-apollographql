@@ -15,7 +15,7 @@ const cache = new InMemoryCache();
 const httpLink = new HttpLink({
   uri: GITHUB_BASE_URL,
   headers: {
-    authorization: `Bearer bc9a75f0724633724d13d4c9773e7e2c5f9d5358`,
+    authorization: `Bearer ${process.env.GITHUB_PERSONAL_ACCESS_TOKEN}`,
   },
 });
 
